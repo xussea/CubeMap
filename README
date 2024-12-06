@@ -1,0 +1,11 @@
+Here are the instructions to compile and the CubeMap approach 
+
+Note, that the code is still in optimization process and it might be some bugs. You run it at your own risk and you are responsible of checkign that the obtained data makes sense.
+
+Compile the code:
+gfortran -O2 CubeMap.f90 -llapack -lblas -o cubemap 
+
+Run the code:
+You need a Cube file of the moolecular orbital of interest produced with any quantum chemical software and the xyz files of the two molecules of interest to compute the coupling. It is runned as:
+
+cubemap cubefile xyz1 xyz2 
